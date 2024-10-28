@@ -1,0 +1,35 @@
+{% extends "potability.html" %}
+
+{% block title %}Potability Single Prediction{% endblock %}
+
+{% block content %}
+    <h2>Water Qaulity Analysis</h2>
+    <p>Give valid inputs into the form.</p>
+
+    <form action="/single_prediction" method="POST">
+        <label for="input1">pH (Integer/Float):</label>
+        <input type="text" id="input1" name="input1" required><br><br>
+
+        <label for="input2">Hardness (Integer/Float):</label>
+        <input type="text" id="input2" name="input2" required><br><br>
+
+        <label for="input3">Chloramines (Integer/Float):</label>
+        <input type="text" id="input3" name="input3" required><br><br>
+
+        <label for="input4">Sulfate (Integer/Float):</label>
+        <input type="text" id="input4" name="input4" required><br><br>
+
+        <label for="input5">Conductivity (Integer/Float):</label>
+        <input type="text" id="input5" name="input5" required><br><br>
+
+        <label for="input6">Organic carbon (Integer/Float):</label>
+        <input type="text" id="input6" name="input6" required><br><br>
+
+        <label for="input7">Trihalomethanes (Integer/Float):</label>
+        <input type="text" id="input7" name="input7" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+{% endblock %}

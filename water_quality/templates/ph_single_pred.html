@@ -1,0 +1,43 @@
+{% extends "ph_check.html" %}
+
+{% block title %}PH Single Prediction{% endblock %}
+
+{% block content %}
+    <h2>Water Qaulity Analysis</h2>
+    <p>Give valid inputs into the form.</p>
+
+    <form action="/ph_single_prediction" method="POST">
+        
+
+        <label for="input1">Hardness (Integer/Float):</label>
+        <input type="text" id="input1" name="input1" required><br><br>
+        
+        <label for="input2">Solids (Integer/Float):</label>
+        <input type="text" id="input2" name="input2" required><br><br>
+
+        <label for="input3">Chloramines (Integer/Float):</label>
+        <input type="text" id="input3" name="input3" required><br><br>
+
+        <label for="input4">Sulfate (Integer/Float):</label>
+        <input type="text" id="input4" name="input4" required><br><br>
+
+        <label for="input5">Conductivity (Integer/Float):</label>
+        <input type="text" id="input5" name="input5" required><br><br>
+
+        <label for="input6">Organic carbon (Integer/Float):</label>
+        <input type="text" id="input6" name="input6" required><br><br>
+
+        <label for="input7">Trihalomethanes (Integer/Float):</label>
+        <input type="text" id="input7" name="input7" required><br><br>
+
+        <label for="input8">Turbidity (Integer/Float):</label>
+        <input type="text" id="input8" name="input8" required><br><br>
+        
+        <label for="input9">Potability (Integer):</label>
+        <input type="text" id="input9" name="input9" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+{% endblock %}

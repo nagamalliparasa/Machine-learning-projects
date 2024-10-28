@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Main Page{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Water Quality Analysis using Machine Learning</h1>
+    <div class="buttons">
+        <button class="button">
+            <a href="/potability">Water Potability</a>
+        </button>
+        <button class="button">
+            <a href="/ph_check">pH Estimation</a>
+
+        </button>
+    </div>
+
+    <div class="content">
+        {% block content %}
+        <!-- This block will be filled by other templates -->
+        {% endblock %}
+    </div>
+</body>
+</html>

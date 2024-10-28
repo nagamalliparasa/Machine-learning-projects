@@ -1,0 +1,7 @@
+{
+    "NoofCols":7,
+    "Cols":[
+        "ph", "Hardness", "Chloramines", "Sulfate", "Conductivity",
+       "Organic_carbon", "Trihalomethanes"
+    ]
+}

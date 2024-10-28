@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potability</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Water Qaulity Analysis</h2>
+    <p>Choose whether you want single or batch prediction</p>
+
+    <div class="buttons">
+        <button class="button">
+            <a href="/single_prediction">Single Prediction</a>
+        </button>
+        <button class="button">
+            <a href="/batch_prediction">Batch Prediction</a>
+
+        </button>
+    </div>
+
+    <div class="content">
+        {% block content %}
+        <!-- This block will be filled by other templates -->
+        {% endblock %}
+    </div>
+    
+</body>
+</html>

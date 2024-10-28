@@ -1,0 +1,14 @@
+{% extends "potability.html" %}
+
+{% block title %}Potability Single Prediction{% endblock %}
+
+{% block content %}
+
+<h1>Prediction(s) are:</h1>
+<ul>
+    {% for item in predictions %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
